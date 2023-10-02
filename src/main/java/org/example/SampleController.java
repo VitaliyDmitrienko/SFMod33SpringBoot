@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 // вешаем аннотации, говорящие, что это REST-контроллер,
 // который сконфигурируется сам
 @Controller
+@RestController
 @EnableAutoConfiguration
 public class SampleController {
     static String postString = null;
@@ -15,23 +16,25 @@ public class SampleController {
     // сообщаем сервису, что он должен работать по URL-адресу /hello
     // например, http://localhost:8080/hello
     // и говорим, что у него должно быть тело ответа (т.е. ответ не пустой)
-    @RequestMapping("/")
-    @ResponseBody
+//    @RequestMapping("/")
+    @GetMapping("/")
+//    @ResponseBody
     String helloCourse() {
         return "Hello SkillFactory!";
     }
 
     @GetMapping("/oneanswer")
-    @ResponseBody
+//    @ResponseBody
     String something() {
         return "One answer";
     }
     @PostMapping("/register")
+//    @ResponseBody
     void postSaver (@RequestParam String incomingString){
         postString = incomingString;
     }
     @GetMapping("/responseanswer")
-    @ResponseBody
+//    @ResponseBody
     String responseSomething() {
         if (postString == null || postString.isEmpty()) return "Not present";
         else return("Present: " + postString);
