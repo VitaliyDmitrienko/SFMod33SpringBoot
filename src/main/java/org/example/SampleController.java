@@ -1,9 +1,11 @@
 package org.example;
 
+import org.example.dto.UserData;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
+
 
 // вешаем аннотации, говорящие, что это REST-контроллер,
 // который сконфигурируется сам
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration
 public class SampleController {
     static String postString = null;
+    UserData userData;
+//    userData = null;
 
     // сообщаем сервису, что он должен работать по URL-адресу /hello
     // например, http://localhost:8080/hello
@@ -29,16 +33,35 @@ public class SampleController {
     String something() {
         return "One answer";
     }
+
+//    @PostMapping
+////    @ResponseBody
+//    void postSaver (@RequestParam String incomingString){
+//        postString = incomingString;
+//    }
+
     @PostMapping
-//    @ResponseBody
-    void postSaver (@RequestParam String incomingString){
-        postString = incomingString;
+    void createUser (@RequestParam int id, @RequestParam String firstName, @RequestParam String lastName) {
+        if (userData == null) {
+            userData = new UserData();
+        }
+        userData.setUserID(id);
+        userData.setFirstName(firstName);
+        userData.setLastName(lastName);
     }
+
+//    @GetMapping
+////    @ResponseBody
+//    String responseSomething() {
+//        if (postString == null || postString.isEmpty()) return "Record is not present/not yet init.";
+//        else return("Record is present. User name is: " + postString);
+//    }
+
     @GetMapping
-//    @ResponseBody
-    String responseSomething() {
-        if (postString == null || postString.isEmpty()) return "Record is not present/not yet init.";
-        else return("Record is present. User name is: " + postString);
+    String responseUserData () {
+        if (userData == null) {
+            return "Record is not present/not yet init.";
+        } else {return (userData.toString());}
     }
 
 

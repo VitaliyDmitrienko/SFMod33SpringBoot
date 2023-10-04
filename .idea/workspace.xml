@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a043894-8489-48b5-9c5d-e3dbf0491f7e" name="Changes" comment="2nd. Add @RestController to class header. Remove @ResponseBody from all methods headers. Add application.properties to src/main/resources (change default port :8080 to :9091).">
+    <list default="true" id="5a043894-8489-48b5-9c5d-e3dbf0491f7e" name="Changes" comment="3rd. Remove @RequestMapping(&quot;/users&quot;) to class header. Correct all method's headers @ to unification &quot;curl naming manifest&quot;.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserSerialisation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SampleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,39 +16,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2VyyWVQf7KdDiZt5GCNWqTrS7Dd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SFMod33SringBoot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SFMod33SringBoot" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696257994473</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3rd. Remove @RequestMapping(&quot;/users&quot;) to class header. Correct all method's headers @ to unification &quot;curl naming manifest&quot;.">
+      <option name="closed" value="true" />
+      <created>1696416874114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696416874114</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +106,7 @@
     <MESSAGE value="Init." />
     <MESSAGE value="1st." />
     <MESSAGE value="2nd. Add @RestController to class header. Remove @ResponseBody from all methods headers. Add application.properties to src/main/resources (change default port :8080 to :9091)." />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd. Add @RestController to class header. Remove @ResponseBody from all methods headers. Add application.properties to src/main/resources (change default port :8080 to :9091)." />
+    <MESSAGE value="3rd. Remove @RequestMapping(&quot;/users&quot;) to class header. Correct all method's headers @ to unification &quot;curl naming manifest&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="3rd. Remove @RequestMapping(&quot;/users&quot;) to class header. Correct all method's headers @ to unification &quot;curl naming manifest&quot;." />
   </component>
 </project>
