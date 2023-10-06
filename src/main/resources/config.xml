@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Так начинается любой XML файл -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> <!-- Все эти три строчки нужны, чтобы сообщить, что будет использовано пространство имен, связанных со Spring'ом, благодаря этому мы можем в xml пользоваться такими тегами, как bean -->
+    <!-- целевой бин, к которому мы можем обратиться по имени-идентификатору -->
+    <bean id="userData" class="org.example.dto.UserData" scope="prototype"> <!-- Данной строчкой мы начинаем описания нашего бина, определяем его уникальный идентификатор, класс и метод его создания - prototype -->
+        <property name="userID" /> <!-- Задаем нужные параметры для нашего бина, это по сути ссылки на поля класса -->
+        <property name="firstName" />
+        <property name="lastName" />
+    </bean>
+</beans>

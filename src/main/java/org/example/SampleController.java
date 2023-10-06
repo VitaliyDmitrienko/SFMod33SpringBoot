@@ -3,6 +3,7 @@ package org.example;
 import org.example.dto.UserData;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -68,6 +69,10 @@ public class SampleController {
     public static void main(String[] args) throws Exception {
         // метод, который запускает наше Spring-приложение,
         // от main больше ничего не надо
+        ApplicationContext context = new ClassPathApplicationContext("config.xml");
+        UserData testBean = (UserData) context.getBean("testBean");
+        System.out.println(testBean.getName());
+
         SpringApplication.run(SampleController.class, args);
     }
 }
