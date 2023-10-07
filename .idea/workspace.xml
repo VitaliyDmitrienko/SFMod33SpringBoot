@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a043894-8489-48b5-9c5d-e3dbf0491f7e" name="Changes" comment="4th. Add org.example.dto/UserData class. Change @GetMapping/@PostMapping to UserData processing.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5a043894-8489-48b5-9c5d-e3dbf0491f7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696432610469</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5th. Add various methods to create beans: beans.xml + config.xml + org.example.">
+      <option name="closed" value="true" />
+      <created>1696682155729</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696682155729</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +127,7 @@
     <MESSAGE value="2nd. Add @RestController to class header. Remove @ResponseBody from all methods headers. Add application.properties to src/main/resources (change default port :8080 to :9091)." />
     <MESSAGE value="3rd. Remove @RequestMapping(&quot;/users&quot;) to class header. Correct all method's headers @ to unification &quot;curl naming manifest&quot;." />
     <MESSAGE value="4th. Add org.example.dto/UserData class. Change @GetMapping/@PostMapping to UserData processing." />
-    <option name="LAST_COMMIT_MESSAGE" value="4th. Add org.example.dto/UserData class. Change @GetMapping/@PostMapping to UserData processing." />
+    <MESSAGE value="5th. Add various methods to create beans: beans.xml + config.xml + org.example." />
+    <option name="LAST_COMMIT_MESSAGE" value="5th. Add various methods to create beans: beans.xml + config.xml + org.example." />
   </component>
 </project>
